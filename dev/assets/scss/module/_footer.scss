@@ -23,3 +23,31 @@ footer {
     font-size: $fontSize2;
   }
 }
+
+/* ANCHOR mediaQueries Mobile phone */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  footer {
+    background-color: $backgroundColor;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding-bottom: 5rem;
+    .footerImpressum {
+      margin: 0.5rem;
+      a {
+        text-decoration: none;
+      }
+    }
+    .copyrightMike {
+      margin: 0.5rem;
+      display: flex;
+      font-size: $fontSize2;
+    }
+    .copyrightEzyCode {
+      margin: 0.5rem;
+      display: flex;
+      font-size: $fontSize2;
+    }
+  }
+}

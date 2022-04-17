@@ -190,6 +190,33 @@ footer .copyrightEzyCode {
   font-size: 1rem;
 }
 
+/* ANCHOR mediaQueries Mobile phone */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  footer {
+    background-color: #1e2327;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding-bottom: 5rem;
+  }
+  footer .footerImpressum {
+    margin: 0.5rem;
+  }
+  footer .footerImpressum a {
+    text-decoration: none;
+  }
+  footer .copyrightMike {
+    margin: 0.5rem;
+    display: flex;
+    font-size: 1rem;
+  }
+  footer .copyrightEzyCode {
+    margin: 0.5rem;
+    display: flex;
+    font-size: 1rem;
+  }
+}
 /* colors */
 /* Fonts */
 /* transition */
@@ -652,10 +679,30 @@ body {
 /* section carHifi end */
 /*ANCHOR section contact */
 #contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #1e2327;
   width: 90%;
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
+}
+#contact .textContact {
+  line-height: 1.5rem;
+  width: 50%;
+}
+#contact .textContact p span a {
+  color: rgb(253, 70, 70);
+}
+#contact .textContact h1 {
+  padding-bottom: 1rem;
+}
+#contact .textContact h1 span {
+  color: rgb(253, 70, 70);
+}
+#contact .map {
+  margin: 5rem 0 0 0;
 }
 
 /* section contact end */

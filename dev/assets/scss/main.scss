@@ -230,11 +230,36 @@ body {
 
 /*ANCHOR section contact */
 #contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: $backgroundColor;
   width: 90%;
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
+  .textContact {
+    line-height: 1.5rem;
+    width: 50%;
+    p {
+      span {
+        a {
+          color: $accentColor;
+        }
+      }
+    }
+    h1 {
+      padding-bottom: 1rem;
+      span {
+        color: $accentColor;
+      }
+    }
+  }
+  .map {
+    margin: 5rem 0 0 0;
+  }
 }
+
 /* section contact end */
 
 /*ANCHOR section folien */
