@@ -468,7 +468,7 @@ header .socialLogoContainer .instagram:hover {
 
 body {
   background-image: url(/prod/assets/img/backgroundMain.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -705,6 +705,40 @@ body {
   margin: 5rem 0 0 0;
 }
 
+/* section index mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e2327;
+    width: 100%;
+    padding: 5rem 0 5rem 0;
+  }
+  #contact .textContact {
+    line-height: 1.5rem;
+    width: 90%;
+  }
+  #contact .textContact p span a {
+    color: rgb(253, 70, 70);
+  }
+  #contact .textContact h1 {
+    padding-bottom: 1rem;
+  }
+  #contact .textContact h1 span {
+    color: rgb(253, 70, 70);
+  }
+  #contact .map {
+    width: 90%;
+    height: auto;
+    margin: 5rem 0 0 0;
+  }
+  #contact .map iframe {
+    width: 100%;
+  }
+}
+/* section index mobile end */
 /* section contact end */
 /*ANCHOR section folien */
 #folien {
@@ -734,13 +768,45 @@ body {
 /* section folien end */
 /*ANCHOR section impressum */
 #impressum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #1e2327;
   width: 90%;
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
 }
+#impressum .textImpressum {
+  line-height: 1.5rem;
+  width: 50%;
+}
+#impressum .textImpressum h1 {
+  padding-bottom: 1rem;
+}
 
+/* section index mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #impressum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e2327;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 5rem 0 5rem 0;
+  }
+  #impressum .textImpressum {
+    line-height: 1.5rem;
+    width: 90%;
+  }
+  #impressum .textImpressum h1 {
+    padding-bottom: 1rem;
+  }
+}
 /* section impressum end */
+/* section index mobile end */
 /*ANCHOR section partners */
 #partners {
   background-color: #1e2327;
@@ -752,10 +818,41 @@ body {
 /* section partners end */
 /*ANCHOR section shop */
 #shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #1e2327;
   width: 90%;
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
+}
+#shop .textShop {
+  line-height: 1.5rem;
+  width: 50%;
+}
+#shop .textShop .shopCards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+#shop .textShop .shopCards .shopCardText {
+  width: 50%;
+  height: auto;
+  margin-left: 2rem;
+}
+#shop .textShop .shopCards .imgContainer {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#shop .textShop .shopCards .imgContainer img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* section shop end */

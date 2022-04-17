@@ -14,7 +14,7 @@
 
 body {
   background-image: url(/prod/assets/img/backgroundMain.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   body {
@@ -259,7 +259,44 @@ body {
     margin: 5rem 0 0 0;
   }
 }
-
+/* section index mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgroundColor;
+    width: 100%;
+    padding: 5rem 0 5rem 0;
+    .textContact {
+      line-height: 1.5rem;
+      width: 90%;
+      p {
+        span {
+          a {
+            color: $accentColor;
+          }
+        }
+      }
+      h1 {
+        padding-bottom: 1rem;
+        span {
+          color: $accentColor;
+        }
+      }
+    }
+    .map {
+      width: 90%;
+      height: auto;
+      margin: 5rem 0 0 0;
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+}
+/* section index mobile end */
 /* section contact end */
 
 /*ANCHOR section folien */
@@ -293,12 +330,44 @@ body {
 
 /*ANCHOR section impressum */
 #impressum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: $backgroundColor;
   width: 90%;
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
+  .textImpressum {
+    line-height: 1.5rem;
+    width: 50%;
+    h1 {
+      padding-bottom: 1rem;
+    }
+  }
+}
+/* section index mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #impressum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgroundColor;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 5rem 0 5rem 0;
+    .textImpressum {
+      line-height: 1.5rem;
+      width: 90%;
+      h1 {
+        padding-bottom: 1rem;
+      }
+    }
+  }
 }
 /* section impressum end */
+/* section index mobile end */
 
 /*ANCHOR section partners */
 #partners {
@@ -311,10 +380,41 @@ body {
 
 /*ANCHOR section shop */
 #shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: $backgroundColor;
   width: 90%;
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
+  .textShop {
+    line-height: 1.5rem;
+    width: 50%;
+    .shopCards {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      .shopCardText {
+        width: 50%;
+        height: auto;
+        margin-left: 2rem;
+      }
+      .imgContainer {
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }
 /* section shop end */
 
