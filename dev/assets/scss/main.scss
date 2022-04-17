@@ -1,0 +1,405 @@
+@import "module/header";
+@import "module/footer";
+@import "module/menu";
+@import "module/social";
+
+/* general */
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: $mainFont;
+}
+
+body {
+  background-image: url(/prod/assets/img/backgroundMain.jpg);
+  background-repeat: no-repeat;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body {
+    background-image: none;
+  }
+}
+
+/* general end */
+
+/*ANCHOR section index */
+#index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $backgroundColor;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+  .textIndex {
+    line-height: 1.5rem;
+    width: 50%;
+    h1 {
+      padding-bottom: 1rem;
+      span {
+        color: $accentColor;
+      }
+    }
+  }
+}
+/* section index mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgroundColor;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 5rem 0 5rem 0;
+    .textIndex {
+      line-height: 1.5rem;
+      width: 90%;
+      h1 {
+        padding-bottom: 1rem;
+        span {
+          color: $accentColor;
+        }
+      }
+    }
+  }
+}
+/* section index mobile end */
+/* section index end */
+
+/*ANCHOR section carClean */
+#carClean {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $backgroundColor;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+  .textCarClean {
+    line-height: 1.5rem;
+    width: 50%;
+    h1 {
+      padding-bottom: 1rem;
+    }
+    p {
+      span {
+        color: $accentColor;
+        a {
+          text-decoration: none;
+          color: $accentColor;
+        }
+      }
+    }
+  }
+  .insideClean {
+    margin-top: 5rem;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    p {
+      padding-top: 1rem;
+    }
+  }
+  .desinfection {
+    margin-top: 5rem;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    p {
+      padding-top: 1rem;
+    }
+  }
+  .headlight {
+    margin-top: 5rem;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    p {
+      padding-top: 1rem;
+    }
+  }
+}
+/* section index mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #carClean {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgroundColor;
+    width: 100%;
+    padding: 5rem 0 5rem 0;
+    .textCarClean {
+      line-height: 1.5rem;
+      width: 90%;
+      h1 {
+        padding-bottom: 1rem;
+      }
+      p {
+        span {
+          color: $accentColor;
+          a {
+            text-decoration: none;
+            color: $accentColor;
+          }
+        }
+      }
+    }
+    .insideClean {
+      margin-top: 5rem;
+      width: 90%;
+      height: auto;
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      p {
+        padding-top: 1rem;
+      }
+    }
+    .desinfection {
+      margin-top: 5rem;
+      width: 90%;
+      height: auto;
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      p {
+        padding-top: 1rem;
+      }
+    }
+    .headlight {
+      margin-top: 5rem;
+      width: 90%;
+      height: auto;
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      p {
+        padding-top: 1rem;
+      }
+    }
+  }
+}
+/* section index mobile end */
+/* section carClean end */
+
+/*ANCHOR section carHifi */
+#carHifi {
+  background-color: $backgroundColor;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+}
+/* section carHifi end */
+
+/*ANCHOR section contact */
+#contact {
+  background-color: $backgroundColor;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+}
+/* section contact end */
+
+/*ANCHOR section folien */
+#folien {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $backgroundColor;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+  .textFolien {
+    line-height: 1.5rem;
+    width: 50%;
+    h1 {
+      padding-bottom: 1rem;
+    }
+    p {
+      span {
+        color: $accentColor;
+      }
+    }
+  }
+  .textFolienMöbel {
+    margin-top: 1rem;
+  }
+}
+
+/* section folien end */
+
+/*ANCHOR section impressum */
+#impressum {
+  background-color: $backgroundColor;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+}
+/* section impressum end */
+
+/*ANCHOR section partners */
+#partners {
+  background-color: $backgroundColor;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+}
+/* section partners end */
+
+/*ANCHOR section shop */
+#shop {
+  background-color: $backgroundColor;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+}
+/* section shop end */
+
+/*ANCHOR section wheels */
+#wheels {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $backgroundColor;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+  .textWheels {
+    width: 50%;
+    h1 {
+      padding-bottom: 1rem;
+    }
+    p {
+      line-height: 1.5rem;
+      .highlieghtContent {
+        color: $accentColor;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $accentColor;
+    }
+  }
+  .imgContainerWheels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .alcarContainer {
+      margin: 3rem 0 3rem 0;
+    }
+    .cardContainerWheels {
+      display: flex;
+      .partnerCard {
+        max-width: 150px;
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        img {
+          width: 100%;
+          height: auto;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
+/* section index mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #wheels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgroundColor;
+    width: 100%;
+    padding: 5rem 0 5rem 0;
+    .textWheels {
+      width: 90%;
+      h1 {
+        padding-bottom: 1rem;
+      }
+      p {
+        line-height: 1.5rem;
+        .highlieghtContent {
+          color: $accentColor;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: $accentColor;
+      }
+    }
+    .imgContainerWheels {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .alcarContainer {
+        max-width: 90%;
+        margin: 3rem 0 3rem 0;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .cardContainerWheels {
+        display: flex;
+        .partnerCard {
+          max-width: 150px;
+          aspect-ratio: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 1rem;
+          img {
+            width: 100%;
+            height: auto;
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+/* section index mobile end */
+/* section wheels end */

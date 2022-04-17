@@ -1,0 +1,63 @@
+/* colors */
+$backgroundColor: #1e2327;
+$accentColor: rgb(253, 70, 70);
+
+/* Fonts */
+$mainFont: "Roboto", sans-serif;
+$fontSize1: 0.5rem;
+$fontSize2: 1rem;
+$fontSize3: 1.5rem;
+
+/* transition */
+$transition1: 0.2s;
+$transition2: 0.5s;
+$transition3: 1s;
+
+/* animation socialLogos */
+
+@keyframes slideMenuContainer {
+  0% {
+    transform: translateX(-1000%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes animateLogo {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

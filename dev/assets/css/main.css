@@ -1,0 +1,827 @@
+@charset "UTF-8";
+/* colors */
+/* Fonts */
+/* transition */
+/* animation socialLogos */
+@keyframes slideMenuContainer {
+  0% {
+    transform: translateX(-1000%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes animateLogo {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+header {
+  background-color: #1e2327;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-rows: auto auto;
+  place-items: center;
+}
+header .logoContainer {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  /* animation: 1s ease-in-out 0s 1 animateLogo; */
+  width: 80%;
+  max-height: 800px;
+  overflow: hidden;
+  border-radius: 10%;
+}
+header .logoContainer .background {
+  width: 90%;
+  max-height: 500px;
+  transition: 0.2s;
+  object-fit: cover;
+}
+header .logoContainer .logo {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 25%;
+  height: auto;
+  transition: 0.2s;
+  object-fit: cover;
+}
+
+/* ANCHOR mediaQueries Mobile phone */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  header {
+    background-color: #1e2327;
+    width: 100%;
+    padding-top: 0rem;
+    display: flex;
+  }
+  header .logoContainer {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 0px;
+  }
+  header .logoContainer .background {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+  }
+  header .logoContainer .background img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  header .logoContainer .logo {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+/* colors */
+/* Fonts */
+/* transition */
+/* animation socialLogos */
+@keyframes slideMenuContainer {
+  0% {
+    transform: translateX(-1000%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes animateLogo {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+footer {
+  background-color: #1e2327;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto 0 auto;
+}
+footer .footerImpressum {
+  margin: 0.5rem;
+}
+footer .footerImpressum a {
+  text-decoration: none;
+}
+footer .copyrightMike {
+  margin: 0.5rem;
+  display: flex;
+  font-size: 1rem;
+}
+footer .copyrightEzyCode {
+  margin: 0.5rem;
+  display: flex;
+  font-size: 1rem;
+}
+
+/* colors */
+/* Fonts */
+/* transition */
+/* animation socialLogos */
+@keyframes slideMenuContainer {
+  0% {
+    transform: translateX(-1000%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes animateLogo {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+menu .menuContainer {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  animation: 1s ease-in-out 0s 1 slideMenuContainer;
+}
+menu .menuContainer .menuCard {
+  border-bottom: 1px solid rgb(253, 70, 70);
+  border-radius: 5px;
+  margin: 1rem;
+  transition: 0.2s;
+}
+menu .menuContainer .menuCard a {
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  padding: 0.8rem;
+}
+menu .menuContainer .menuCard:hover {
+  transform: scale(1.1);
+}
+
+/* ANCHOR mediaQueries Mobile phone */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  menu .menuContainer {
+    animation-name: none;
+    position: absolute;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e2327;
+    width: 100%;
+    margin-top: -800px;
+    transition: 0.5s;
+  }
+  menu .menuContainer .menuCard {
+    border-bottom: 1px solid rgb(253, 70, 70);
+    border-radius: 5px;
+    margin: 1rem;
+    transition: 0.2s;
+  }
+  menu .menuContainer .menuCard a {
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 0.8rem;
+  }
+  menu .menuContainer .menuCard:hover {
+    transform: scale(1);
+  }
+
+  #menuContainer.active {
+    margin-top: -130px;
+    animation-name: none;
+    /* position: absolute; */
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e2327;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    top: 100px;
+  }
+}
+/* colors */
+/* Fonts */
+/* transition */
+/* animation socialLogos */
+@keyframes slideMenuContainer {
+  0% {
+    transform: translateX(-1000%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes animateLogo {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+header .socialLogoContainer {
+  display: flex;
+}
+header .socialLogoContainer div {
+  margin: 0.5rem;
+}
+header .socialLogoContainer .menuBurger {
+  visibility: hidden;
+}
+header .socialLogoContainer .home {
+  animation: 1s ease-in-out 0s 1 slideMenuContainer;
+  transition: 0.2s;
+}
+header .socialLogoContainer .contact {
+  animation: 1s ease-in-out 0s 1 slideMenuContainer;
+  transition: 0.2s;
+}
+header .socialLogoContainer .facebook {
+  animation: 1s ease-in-out 0s 1 slideMenuContainer;
+  transition: 0.2s;
+}
+header .socialLogoContainer .instagram {
+  animation: 1s ease-in-out 0s 1 slideMenuContainer;
+  transition: 0.2s;
+}
+header .socialLogoContainer .contact:hover {
+  transform: scale(1.2);
+}
+header .socialLogoContainer .facebook:hover {
+  transform: scale(1.2);
+}
+header .socialLogoContainer .instagram:hover {
+  transform: scale(1.2);
+}
+
+/* ANCHOR mediaQueries Mobile phone */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  header .socialLogoContainer {
+    position: absolute;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+  }
+  header .socialLogoContainer .menuBurger {
+    visibility: visible;
+    transition: 0.5s;
+  }
+  header .socialLogoContainer #menuBurger.active {
+    transform: rotate(180deg);
+  }
+  header .socialLogoContainer .home {
+    animation-name: none;
+  }
+  header .socialLogoContainer .contact {
+    animation-name: none;
+  }
+  header .socialLogoContainer .facebook {
+    animation-name: none;
+  }
+  header .socialLogoContainer .instagram {
+    animation-name: none;
+  }
+  header .socialLogoContainer::before {
+    content: "";
+    width: 100%;
+    height: 3rem;
+    background-color: #1e2327;
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url(/prod/assets/img/backgroundMain.jpg);
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body {
+    background-image: none;
+  }
+}
+/* general end */
+/*ANCHOR section index */
+#index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e2327;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+}
+#index .textIndex {
+  line-height: 1.5rem;
+  width: 50%;
+}
+#index .textIndex h1 {
+  padding-bottom: 1rem;
+}
+#index .textIndex h1 span {
+  color: rgb(253, 70, 70);
+}
+
+/* section index mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e2327;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 5rem 0 5rem 0;
+  }
+  #index .textIndex {
+    line-height: 1.5rem;
+    width: 90%;
+  }
+  #index .textIndex h1 {
+    padding-bottom: 1rem;
+  }
+  #index .textIndex h1 span {
+    color: rgb(253, 70, 70);
+  }
+}
+/* section index mobile end */
+/* section index end */
+/*ANCHOR section carClean */
+#carClean {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e2327;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+}
+#carClean .textCarClean {
+  line-height: 1.5rem;
+  width: 50%;
+}
+#carClean .textCarClean h1 {
+  padding-bottom: 1rem;
+}
+#carClean .textCarClean p span {
+  color: rgb(253, 70, 70);
+}
+#carClean .textCarClean p span a {
+  text-decoration: none;
+  color: rgb(253, 70, 70);
+}
+#carClean .insideClean {
+  margin-top: 5rem;
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#carClean .insideClean img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+#carClean .insideClean p {
+  padding-top: 1rem;
+}
+#carClean .desinfection {
+  margin-top: 5rem;
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#carClean .desinfection img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+#carClean .desinfection p {
+  padding-top: 1rem;
+}
+#carClean .headlight {
+  margin-top: 5rem;
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#carClean .headlight img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+#carClean .headlight p {
+  padding-top: 1rem;
+}
+
+/* section index mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #carClean {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e2327;
+    width: 100%;
+    padding: 5rem 0 5rem 0;
+  }
+  #carClean .textCarClean {
+    line-height: 1.5rem;
+    width: 90%;
+  }
+  #carClean .textCarClean h1 {
+    padding-bottom: 1rem;
+  }
+  #carClean .textCarClean p span {
+    color: rgb(253, 70, 70);
+  }
+  #carClean .textCarClean p span a {
+    text-decoration: none;
+    color: rgb(253, 70, 70);
+  }
+  #carClean .insideClean {
+    margin-top: 5rem;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #carClean .insideClean img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  #carClean .insideClean p {
+    padding-top: 1rem;
+  }
+  #carClean .desinfection {
+    margin-top: 5rem;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #carClean .desinfection img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  #carClean .desinfection p {
+    padding-top: 1rem;
+  }
+  #carClean .headlight {
+    margin-top: 5rem;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #carClean .headlight img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  #carClean .headlight p {
+    padding-top: 1rem;
+  }
+}
+/* section index mobile end */
+/* section carClean end */
+/*ANCHOR section carHifi */
+#carHifi {
+  background-color: #1e2327;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+}
+
+/* section carHifi end */
+/*ANCHOR section contact */
+#contact {
+  background-color: #1e2327;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+}
+
+/* section contact end */
+/*ANCHOR section folien */
+#folien {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e2327;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+}
+#folien .textFolien {
+  line-height: 1.5rem;
+  width: 50%;
+}
+#folien .textFolien h1 {
+  padding-bottom: 1rem;
+}
+#folien .textFolien p span {
+  color: rgb(253, 70, 70);
+}
+#folien .textFolienMöbel {
+  margin-top: 1rem;
+}
+
+/* section folien end */
+/*ANCHOR section impressum */
+#impressum {
+  background-color: #1e2327;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+}
+
+/* section impressum end */
+/*ANCHOR section partners */
+#partners {
+  background-color: #1e2327;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+}
+
+/* section partners end */
+/*ANCHOR section shop */
+#shop {
+  background-color: #1e2327;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+}
+
+/* section shop end */
+/*ANCHOR section wheels */
+#wheels {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e2327;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 5rem 0;
+}
+#wheels .textWheels {
+  width: 50%;
+}
+#wheels .textWheels h1 {
+  padding-bottom: 1rem;
+}
+#wheels .textWheels p {
+  line-height: 1.5rem;
+}
+#wheels .textWheels p .highlieghtContent {
+  color: rgb(253, 70, 70);
+}
+#wheels .textWheels a {
+  text-decoration: none;
+  color: rgb(253, 70, 70);
+}
+#wheels .imgContainerWheels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#wheels .imgContainerWheels .alcarContainer {
+  margin: 3rem 0 3rem 0;
+}
+#wheels .imgContainerWheels .cardContainerWheels {
+  display: flex;
+}
+#wheels .imgContainerWheels .cardContainerWheels .partnerCard {
+  max-width: 150px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+#wheels .imgContainerWheels .cardContainerWheels .partnerCard img {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+}
+
+/* section index mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #wheels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e2327;
+    width: 100%;
+    padding: 5rem 0 5rem 0;
+  }
+  #wheels .textWheels {
+    width: 90%;
+  }
+  #wheels .textWheels h1 {
+    padding-bottom: 1rem;
+  }
+  #wheels .textWheels p {
+    line-height: 1.5rem;
+  }
+  #wheels .textWheels p .highlieghtContent {
+    color: rgb(253, 70, 70);
+  }
+  #wheels .textWheels a {
+    text-decoration: none;
+    color: rgb(253, 70, 70);
+  }
+  #wheels .imgContainerWheels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #wheels .imgContainerWheels .alcarContainer {
+    max-width: 90%;
+    margin: 3rem 0 3rem 0;
+  }
+  #wheels .imgContainerWheels .alcarContainer img {
+    width: 100%;
+    height: auto;
+  }
+  #wheels .imgContainerWheels .cardContainerWheels {
+    display: flex;
+  }
+  #wheels .imgContainerWheels .cardContainerWheels .partnerCard {
+    max-width: 150px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+  }
+  #wheels .imgContainerWheels .cardContainerWheels .partnerCard img {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+  }
+}
+/* section index mobile end */
+/* section wheels end */
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+@import "../utilities/variables";
+
+footer {
+  background-color: $backgroundColor;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  .footerImpressum {
+    margin: 0.5rem;
+    a {
+      text-decoration: none;
+    }
+  }
+  .copyrightMike {
+    margin: 0.5rem;
+    display: flex;
+    font-size: $fontSize2;
+  }
+  .copyrightEzyCode {
+    margin: 0.5rem;
+    display: flex;
+    font-size: $fontSize2;
+  }
+}

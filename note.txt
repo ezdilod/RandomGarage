@@ -1,0 +1,14 @@
+run sass dev: npm run sass-dev
+run sass prod: npm run sass-prod
+
+weitere Module für sass im Module Ordner anlegen und in die
+main.scss importieren
+
+prodBuild: prod + index.html
+
+meddiaQueries
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)
+
+     
+      
+ 

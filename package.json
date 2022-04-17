@@ -1,0 +1,13 @@
+{
+  "name": "MikesGarage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch dev/assets/scss:dev/assets/css",
+    "sass-prod": "sass --no-source-map --style=compressed dev/assets/scss:prod/assets/css"
+  },
+  "keywords": [],
+  "author": "EzyCode",
+  "license": "MIT"
+}
