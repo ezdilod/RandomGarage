@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "EzyCode",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.50.0"
+  }
 }
