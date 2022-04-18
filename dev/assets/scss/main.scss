@@ -221,11 +221,37 @@ body {
 
 /*ANCHOR section carHifi */
 #carHifi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: $backgroundColor;
   width: 90%;
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
+  .textCarHifi {
+    line-height: 1.5rem;
+    width: 50%;
+  }
 }
+/* section carHifi mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #carHifi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgroundColor;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 5rem 0 5rem 0;
+    .textCarHifi {
+      line-height: 1.5rem;
+      width: 90%;
+    }
+  }
+}
+/* section carHifi mobile end */
 /* section carHifi end */
 
 /*ANCHOR section contact */
@@ -256,7 +282,13 @@ body {
     }
   }
   .map {
+    width: 50%;
+    height: auto;
     margin: 5rem 0 0 0;
+    iframe {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 /* section index mobile */
@@ -288,10 +320,11 @@ body {
     }
     .map {
       width: 90%;
-      height: auto;
+      height: 20%;
       margin: 5rem 0 0 0;
       iframe {
         width: 100%;
+        height: auto;
       }
     }
   }
@@ -325,7 +358,35 @@ body {
     margin-top: 1rem;
   }
 }
-
+/* section folie mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #folien {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgroundColor;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 5rem 0 5rem 0;
+    .textFolien {
+      line-height: 1.5rem;
+      width: 90%;
+      h1 {
+        padding-bottom: 1rem;
+      }
+      p {
+        span {
+          color: $accentColor;
+        }
+      }
+    }
+    .textFolienMöbel {
+      margin-top: 1rem;
+    }
+  }
+}
+/* section folie end */
 /* section folien end */
 
 /*ANCHOR section impressum */
@@ -346,7 +407,7 @@ body {
     }
   }
 }
-/* section index mobile */
+/* section impressum mobile */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #impressum {
     display: flex;
@@ -371,11 +432,37 @@ body {
 
 /*ANCHOR section partners */
 #partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: $backgroundColor;
   width: 90%;
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
+  .textPartners {
+    line-height: 1.5rem;
+    width: 50%;
+  }
 }
+/* section partners mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgroundColor;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 5rem 0 5rem 0;
+    .textPartners {
+      line-height: 1.5rem;
+      width: 90%;
+    }
+  }
+}
+/* section index partners end */
 /* section partners end */
 
 /*ANCHOR section shop */
@@ -397,13 +484,17 @@ body {
       width: 100%;
       height: auto;
       border-radius: 10px;
+      .shopCard {
+        margin: 4rem 0 0 0;
+        display: flex;
+        width: 100%;
+      }
       .shopCardText {
-        width: 50%;
         height: auto;
         margin-left: 2rem;
       }
       .imgContainer {
-        width: 50%;
+        max-width: 40%;
         height: auto;
         border-radius: 10px;
         overflow: hidden;
@@ -413,9 +504,61 @@ body {
           object-fit: cover;
         }
       }
+      span,
+      a {
+        color: $accentColor;
+      }
     }
   }
 }
+/* section shop mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgroundColor;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 5rem 0 5rem 0;
+    .textShop {
+      line-height: 1.5rem;
+      width: 90%;
+      .shopCards {
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        .shopCard {
+          margin: 4rem 0 0 0;
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+        }
+        .shopCardText {
+          margin: 1rem 0 0 0;
+        }
+        .imgContainer {
+          max-width: 100%;
+          height: auto;
+          border-radius: 10px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+        }
+        span,
+        a {
+          color: $accentColor;
+        }
+      }
+    }
+  }
+}
+/* section shop mobile end */
 /* section shop end */
 
 /*ANCHOR section wheels */
@@ -469,7 +612,7 @@ body {
     }
   }
 }
-/* section index mobile */
+/* section wheels mobile */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #wheels {
     display: flex;
@@ -526,5 +669,5 @@ body {
     }
   }
 }
-/* section index mobile end */
+/* section wheels mobile end */
 /* section wheels end */

@@ -670,12 +670,38 @@ body {
 /* section carClean end */
 /*ANCHOR section carHifi */
 #carHifi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #1e2327;
   width: 90%;
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
 }
+#carHifi .textCarHifi {
+  line-height: 1.5rem;
+  width: 50%;
+}
 
+/* section carHifi mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #carHifi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e2327;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 5rem 0 5rem 0;
+  }
+  #carHifi .textCarHifi {
+    line-height: 1.5rem;
+    width: 90%;
+  }
+}
+/* section carHifi mobile end */
 /* section carHifi end */
 /*ANCHOR section contact */
 #contact {
@@ -702,7 +728,13 @@ body {
   color: rgb(253, 70, 70);
 }
 #contact .map {
+  width: 50%;
+  height: auto;
   margin: 5rem 0 0 0;
+}
+#contact .map iframe {
+  width: 100%;
+  height: auto;
 }
 
 /* section index mobile */
@@ -731,11 +763,12 @@ body {
   }
   #contact .map {
     width: 90%;
-    height: auto;
+    height: 20%;
     margin: 5rem 0 0 0;
   }
   #contact .map iframe {
     width: 100%;
+    height: auto;
   }
 }
 /* section index mobile end */
@@ -765,6 +798,33 @@ body {
   margin-top: 1rem;
 }
 
+/* section folie mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #folien {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e2327;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 5rem 0 5rem 0;
+  }
+  #folien .textFolien {
+    line-height: 1.5rem;
+    width: 90%;
+  }
+  #folien .textFolien h1 {
+    padding-bottom: 1rem;
+  }
+  #folien .textFolien p span {
+    color: rgb(253, 70, 70);
+  }
+  #folien .textFolienMöbel {
+    margin-top: 1rem;
+  }
+}
+/* section folie end */
 /* section folien end */
 /*ANCHOR section impressum */
 #impressum {
@@ -785,7 +845,7 @@ body {
   padding-bottom: 1rem;
 }
 
-/* section index mobile */
+/* section impressum mobile */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #impressum {
     display: flex;
@@ -809,12 +869,38 @@ body {
 /* section index mobile end */
 /*ANCHOR section partners */
 #partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #1e2327;
   width: 90%;
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
 }
+#partners .textPartners {
+  line-height: 1.5rem;
+  width: 50%;
+}
 
+/* section partners mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e2327;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 5rem 0 5rem 0;
+  }
+  #partners .textPartners {
+    line-height: 1.5rem;
+    width: 90%;
+  }
+}
+/* section index partners end */
 /* section partners end */
 /*ANCHOR section shop */
 #shop {
@@ -838,13 +924,17 @@ body {
   height: auto;
   border-radius: 10px;
 }
+#shop .textShop .shopCards .shopCard {
+  margin: 4rem 0 0 0;
+  display: flex;
+  width: 100%;
+}
 #shop .textShop .shopCards .shopCardText {
-  width: 50%;
   height: auto;
   margin-left: 2rem;
 }
 #shop .textShop .shopCards .imgContainer {
-  width: 50%;
+  max-width: 40%;
   height: auto;
   border-radius: 10px;
   overflow: hidden;
@@ -854,7 +944,59 @@ body {
   height: auto;
   object-fit: cover;
 }
+#shop .textShop .shopCards span,
+#shop .textShop .shopCards a {
+  color: rgb(253, 70, 70);
+}
 
+/* section shop mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e2327;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 5rem 0 5rem 0;
+  }
+  #shop .textShop {
+    line-height: 1.5rem;
+    width: 90%;
+  }
+  #shop .textShop .shopCards {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  #shop .textShop .shopCards .shopCard {
+    margin: 4rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #shop .textShop .shopCards .shopCardText {
+    margin: 1rem 0 0 0;
+  }
+  #shop .textShop .shopCards .imgContainer {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #shop .textShop .shopCards .imgContainer img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  #shop .textShop .shopCards span,
+#shop .textShop .shopCards a {
+    color: rgb(253, 70, 70);
+  }
+}
+/* section shop mobile end */
 /* section shop end */
 /*ANCHOR section wheels */
 #wheels {
@@ -908,7 +1050,7 @@ body {
   padding: 0.5rem;
 }
 
-/* section index mobile */
+/* section wheels mobile */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #wheels {
     display: flex;
@@ -965,7 +1107,7 @@ body {
     padding: 0.5rem;
   }
 }
-/* section index mobile end */
+/* section wheels mobile end */
 /* section wheels end */
 
 /*# sourceMappingURL=main.css.map */
