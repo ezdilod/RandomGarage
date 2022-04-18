@@ -18,6 +18,8 @@ body {
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   body {
+    width: 100%;
+    height: 100vh;
     background-image: none;
   }
 }
@@ -35,6 +37,7 @@ body {
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
   .textIndex {
+    margin-left: 7rem;
     line-height: 1.5rem;
     width: 50%;
     h1 {
@@ -82,6 +85,7 @@ body {
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
   .textCarClean {
+    margin-left: 7rem;
     line-height: 1.5rem;
     width: 50%;
     h1 {
@@ -98,6 +102,7 @@ body {
     }
   }
   .insideClean {
+    margin-left: 7rem;
     margin-top: 5rem;
     width: 50%;
     height: auto;
@@ -113,6 +118,7 @@ body {
     }
   }
   .desinfection {
+    margin-left: 7rem;
     margin-top: 5rem;
     width: 50%;
     height: auto;
@@ -128,6 +134,7 @@ body {
     }
   }
   .headlight {
+    margin-left: 7rem;
     margin-top: 5rem;
     width: 50%;
     height: auto;
@@ -265,6 +272,7 @@ body {
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
   .textContact {
+    margin-left: 7rem;
     line-height: 1.5rem;
     width: 50%;
     p {
@@ -343,6 +351,7 @@ body {
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
   .textFolien {
+    margin-left: 7rem;
     line-height: 1.5rem;
     width: 50%;
     h1 {
@@ -400,6 +409,7 @@ body {
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
   .textImpressum {
+    margin-left: 7rem;
     line-height: 1.5rem;
     width: 50%;
     h1 {
@@ -441,8 +451,38 @@ body {
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
   .textPartners {
+    h1 {
+      margin: 0 0 1rem 0;
+    }
+    margin-left: 7rem;
     line-height: 1.5rem;
     width: 50%;
+    .partnerContainer {
+      width: 100%;
+      margin-top: 5rem;
+      .partnerImgContainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .outerContainer {
+          display: flex;
+          align-items: center;
+          min-width: 15rem;
+          height: 15rem;
+          margin: 0 auto 0 auto;
+          .imgContainer {
+            margin: 1rem;
+            min-width: 14rem;
+            height: auto;
+            object-fit: cover;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
   }
 }
 /* section partners mobile */
@@ -457,8 +497,36 @@ body {
     margin: 0 auto 0 auto;
     padding: 5rem 0 5rem 0;
     .textPartners {
+      margin: 0;
       line-height: 1.5rem;
       width: 90%;
+      h1 {
+        margin: 0 0 1rem 0;
+      }
+      .partnerContainer {
+        margin-top: 5rem;
+        padding: 0;
+        .partnerImgContainer {
+          padding: 0;
+          .outerContainer {
+            display: flex;
+            align-items: center;
+
+            height: auto;
+            margin: 0 auto 0 auto;
+            .imgContainer {
+              margin: 1rem;
+              min-width: 90%;
+              height: auto;
+              object-fit: cover;
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -476,6 +544,7 @@ body {
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
   .textShop {
+    margin-left: 7rem;
     line-height: 1.5rem;
     width: 50%;
     .shopCards {
@@ -540,7 +609,7 @@ body {
           margin: 1rem 0 0 0;
         }
         .imgContainer {
-          max-width: 100%;
+          min-width: 100%;
           height: auto;
           border-radius: 10px;
           overflow: hidden;
@@ -572,6 +641,7 @@ body {
   margin: 0 auto 0 auto;
   padding: 5rem 0 5rem 0;
   .textWheels {
+    margin-left: 7rem;
     width: 50%;
     h1 {
       padding-bottom: 1rem;

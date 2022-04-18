@@ -49,6 +49,9 @@ header {
       bottom: 0;
       z-index: 2;
       width: 100%;
+      svg {
+        padding: 0.5rem;
+      }
       .menuBurger {
         visibility: visible;
         transition: $transition2;
@@ -72,7 +75,7 @@ header {
     .socialLogoContainer::before {
       content: "";
       width: 100%;
-      height: 3rem;
+      height: 3.5rem;
       background-color: $backgroundColor;
       position: absolute;
       position: fixed;
