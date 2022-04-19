@@ -197,6 +197,7 @@ footer .copyrightEzyCode {
     display: flex;
     justify-content: center;
     width: 100%;
+    height: auto;
     margin: 0 auto 0 auto;
     padding-bottom: 5rem;
   }
@@ -456,7 +457,7 @@ header .socialLogoContainer .instagram:hover {
   header .socialLogoContainer::before {
     content: "";
     width: 100%;
-    height: 3.5rem;
+    height: 5rem;
     background-color: #1e2327;
     position: absolute;
     position: fixed;
@@ -899,6 +900,8 @@ body {
     width: 100%;
     margin: 0 auto 0 auto;
     padding: 5rem 0 5rem 0;
+    /* fix the overflow of impressum */
+    overflow: hidden;
   }
   #impressum .textImpressum {
     margin-left: 0rem;

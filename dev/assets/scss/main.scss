@@ -455,6 +455,8 @@ body {
     width: 100%;
     margin: 0 auto 0 auto;
     padding: 5rem 0 5rem 0;
+    /* fix the overflow of impressum */
+    overflow: hidden;
     .textImpressum {
       margin-left: 0rem;
       line-height: 1.5rem;
