@@ -518,6 +518,7 @@ body {
     padding: 5rem 0 5rem 0;
   }
   #index .textIndex {
+    margin-left: 0rem;
     line-height: 1.5rem;
     width: 90%;
   }
@@ -617,6 +618,7 @@ body {
     padding: 5rem 0 5rem 0;
   }
   #carClean .textCarClean {
+    margin-left: 0rem;
     line-height: 1.5rem;
     width: 90%;
   }
@@ -631,7 +633,7 @@ body {
     color: rgb(253, 70, 70);
   }
   #carClean .insideClean {
-    margin-top: 5rem;
+    margin: 5rem 0 0 0;
     width: 90%;
     height: auto;
     border-radius: 10px;
@@ -646,7 +648,7 @@ body {
     padding-top: 1rem;
   }
   #carClean .desinfection {
-    margin-top: 5rem;
+    margin: 5rem 0 0 0;
     width: 90%;
     height: auto;
     border-radius: 10px;
@@ -661,7 +663,7 @@ body {
     padding-top: 1rem;
   }
   #carClean .headlight {
-    margin-top: 5rem;
+    margin: 5rem 0 0 0;
     width: 90%;
     height: auto;
     border-radius: 10px;
@@ -760,6 +762,7 @@ body {
     padding: 5rem 0 5rem 0;
   }
   #contact .textContact {
+    margin-left: 0rem;
     line-height: 1.5rem;
     width: 90%;
   }
@@ -823,6 +826,7 @@ body {
     padding: 5rem 0 5rem 0;
   }
   #folien .textFolien {
+    margin-left: 0rem;
     line-height: 1.5rem;
     width: 90%;
   }
@@ -871,6 +875,7 @@ body {
     padding: 5rem 0 5rem 0;
   }
   #impressum .textImpressum {
+    margin-left: 0rem;
     line-height: 1.5rem;
     width: 90%;
   }
@@ -1033,6 +1038,7 @@ body {
     padding: 5rem 0 5rem 0;
   }
   #shop .textShop {
+    margin-left: 0rem;
     line-height: 1.5rem;
     width: 90%;
   }
@@ -1134,6 +1140,7 @@ body {
     padding: 5rem 0 5rem 0;
   }
   #wheels .textWheels {
+    margin-left: 0rem;
     width: 90%;
   }
   #wheels .textWheels h1 {
