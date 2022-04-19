@@ -25,7 +25,7 @@ footer {
 }
 
 /* ANCHOR mediaQueries Mobile phone */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   footer {
     background-color: $backgroundColor;
     display: flex;

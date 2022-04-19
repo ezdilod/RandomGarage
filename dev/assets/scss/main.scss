@@ -12,11 +12,21 @@
   font-family: $mainFont;
 }
 
+h1 {
+  font-size: $fontSize3;
+}
+
+p {
+  font-size: $fontSize2;
+}
+
 body {
   background-image: url(/prod/assets/img/backgroundMain.jpg);
-  background-repeat: repeat-y;
+  width: 100%;
+  height: 100vh;
+  background-repeat: repeat;
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   body {
     width: 100%;
     height: 100vh;
@@ -35,13 +45,13 @@ body {
   background-color: $backgroundColor;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
   .textIndex {
     margin-left: 7rem;
-    line-height: 1.5rem;
+    line-height: $linehight3;
     width: 50%;
     h1 {
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
       span {
         color: $accentColor;
       }
@@ -49,7 +59,7 @@ body {
   }
 }
 /* section index mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #index {
     display: flex;
     flex-direction: column;
@@ -64,6 +74,7 @@ body {
       line-height: 1.5rem;
       width: 90%;
       h1 {
+        line-height: $linehight3;
         padding-bottom: 1rem;
         span {
           color: $accentColor;
@@ -84,13 +95,13 @@ body {
   background-color: $backgroundColor;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
   .textCarClean {
     margin-left: 7rem;
-    line-height: 1.5rem;
+    line-height: $linehight3;
     width: 50%;
     h1 {
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
     }
     p {
       span {
@@ -116,6 +127,9 @@ body {
     }
     p {
       padding-top: 1rem;
+      span {
+        color: $accentColor;
+      }
     }
   }
   .desinfection {
@@ -132,6 +146,9 @@ body {
     }
     p {
       padding-top: 1rem;
+      span {
+        color: $accentColor;
+      }
     }
   }
   .headlight {
@@ -148,11 +165,14 @@ body {
     }
     p {
       padding-top: 1rem;
+      span {
+        color: $accentColor;
+      }
     }
   }
 }
 /* section index mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #carClean {
     display: flex;
     flex-direction: column;
@@ -167,6 +187,7 @@ body {
       width: 90%;
       h1 {
         padding-bottom: 1rem;
+        line-height: $linehight3;
       }
       p {
         span {
@@ -237,14 +258,14 @@ body {
   background-color: $backgroundColor;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
   .textCarHifi {
-    line-height: 1.5rem;
+    line-height: $linehight3;
     width: 50%;
   }
 }
 /* section carHifi mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #carHifi {
     display: flex;
     flex-direction: column;
@@ -272,10 +293,10 @@ body {
   background-color: $backgroundColor;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
   .textContact {
     margin-left: 7rem;
-    line-height: 1.5rem;
+    line-height: $linehight3;
     width: 50%;
     p {
       span {
@@ -302,7 +323,7 @@ body {
   }
 }
 /* section index mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #contact {
     display: flex;
     flex-direction: column;
@@ -323,6 +344,7 @@ body {
         }
       }
       h1 {
+        line-height: $linehight3;
         padding-bottom: 1rem;
         span {
           color: $accentColor;
@@ -352,13 +374,13 @@ body {
   background-color: $backgroundColor;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
   .textFolien {
     margin-left: 7rem;
-    line-height: 1.5rem;
+    line-height: $linehight3;
     width: 50%;
     h1 {
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
     }
     p {
       span {
@@ -371,7 +393,7 @@ body {
   }
 }
 /* section folie mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #folien {
     display: flex;
     flex-direction: column;
@@ -386,6 +408,7 @@ body {
       line-height: 1.5rem;
       width: 90%;
       h1 {
+        line-height: $linehight3;
         padding-bottom: 1rem;
       }
       p {
@@ -411,18 +434,18 @@ body {
   background-color: $backgroundColor;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
   .textImpressum {
     margin-left: 7rem;
-    line-height: 1.5rem;
+    line-height: $linehight3;
     width: 50%;
     h1 {
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
     }
   }
 }
 /* section impressum mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #impressum {
     display: flex;
     flex-direction: column;
@@ -437,6 +460,7 @@ body {
       line-height: 1.5rem;
       width: 90%;
       h1 {
+        line-height: $linehight3;
         padding-bottom: 1rem;
       }
     }
@@ -454,13 +478,13 @@ body {
   background-color: $backgroundColor;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
   .textPartners {
     h1 {
-      margin: 0 0 1rem 0;
+      margin: 0 0 2rem 0;
     }
     margin-left: 7rem;
-    line-height: 1.5rem;
+    line-height: $linehight3;
     width: 50%;
     .partnerContainer {
       width: 100%;
@@ -491,7 +515,7 @@ body {
   }
 }
 /* section partners mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #partners {
     display: flex;
     flex-direction: column;
@@ -547,10 +571,13 @@ body {
   background-color: $backgroundColor;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
   .textShop {
+    h1 {
+      margin-bottom: 2rem;
+    }
     margin-left: 7rem;
-    line-height: 1.5rem;
+    line-height: $linehight3;
     width: 50%;
     .shopCards {
       display: flex;
@@ -562,20 +589,20 @@ body {
         margin: 4rem 0 0 0;
         display: flex;
         width: 100%;
-      }
-      .shopCardText {
-        height: auto;
-        margin-left: 2rem;
-      }
-      .imgContainer {
-        max-width: 40%;
-        height: auto;
-        border-radius: 10px;
-        overflow: hidden;
-        img {
-          width: 100%;
+        .shopCardText {
           height: auto;
-          object-fit: cover;
+          margin-left: 2rem;
+        }
+        .imgContainer {
+          min-width: 40%;
+          height: 90%;
+          border-radius: 10px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
         }
       }
       span,
@@ -586,7 +613,7 @@ body {
   }
 }
 /* section shop mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #shop {
     display: flex;
     flex-direction: column;
@@ -598,7 +625,7 @@ body {
     padding: 5rem 0 5rem 0;
     .textShop {
       margin-left: 0rem;
-      line-height: 1.5rem;
+      line-height: $linehight2;
       width: 90%;
       .shopCards {
         display: flex;
@@ -610,19 +637,20 @@ body {
           display: flex;
           flex-wrap: wrap;
           width: 100%;
-        }
-        .shopCardText {
-          margin: 1rem 0 0 0;
-        }
-        .imgContainer {
-          min-width: 100%;
-          height: auto;
-          border-radius: 10px;
-          overflow: hidden;
-          img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
+
+          .shopCardText {
+            margin: 1rem 0 0 0;
+          }
+          .imgContainer {
+            min-width: 100%;
+            height: 40%;
+            border-radius: 10px;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+            }
           }
         }
         span,
@@ -645,15 +673,15 @@ body {
   background-color: $backgroundColor;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
   .textWheels {
     margin-left: 7rem;
+    line-height: $linehight3;
     width: 50%;
     h1 {
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
     }
     p {
-      line-height: 1.5rem;
       .highlieghtContent {
         color: $accentColor;
       }
@@ -689,7 +717,7 @@ body {
   }
 }
 /* section wheels mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #wheels {
     display: flex;
     flex-direction: column;

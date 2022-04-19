@@ -85,7 +85,7 @@ header .logoContainer .logo {
 }
 
 /* ANCHOR mediaQueries Mobile phone */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   header {
     background-color: #1e2327;
     width: 100%;
@@ -182,16 +182,16 @@ footer .footerImpressum a {
 footer .copyrightMike {
   margin: 0.5rem;
   display: flex;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 footer .copyrightEzyCode {
   margin: 0.5rem;
   display: flex;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* ANCHOR mediaQueries Mobile phone */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   footer {
     background-color: #1e2327;
     display: flex;
@@ -209,12 +209,12 @@ footer .copyrightEzyCode {
   footer .copyrightMike {
     margin: 0.5rem;
     display: flex;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   footer .copyrightEzyCode {
     margin: 0.5rem;
     display: flex;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 /* colors */
@@ -279,7 +279,7 @@ menu .menuContainer .menuCard {
 }
 menu .menuContainer .menuCard a {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   display: block;
   padding: 0.8rem;
 }
@@ -288,7 +288,7 @@ menu .menuContainer .menuCard:hover {
 }
 
 /* ANCHOR mediaQueries Mobile phone */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   menu .menuContainer {
     animation-name: none;
     position: absolute;
@@ -309,7 +309,7 @@ menu .menuContainer .menuCard:hover {
   }
   menu .menuContainer .menuCard a {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     display: block;
     padding: 0.8rem;
   }
@@ -407,6 +407,9 @@ header .socialLogoContainer .instagram {
   animation: 1s ease-in-out 0s 1 slideMenuContainer;
   transition: 0.2s;
 }
+header .socialLogoContainer .home:hover {
+  transform: scale(1.2);
+}
 header .socialLogoContainer .contact:hover {
   transform: scale(1.2);
 }
@@ -418,7 +421,7 @@ header .socialLogoContainer .instagram:hover {
 }
 
 /* ANCHOR mediaQueries Mobile phone */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   header .socialLogoContainer {
     position: absolute;
     position: fixed;
@@ -469,12 +472,22 @@ header .socialLogoContainer .instagram:hover {
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  background-image: url(/prod/assets/img/backgroundMain.jpg);
-  background-repeat: repeat-y;
+h1 {
+  font-size: 2rem;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+p {
+  font-size: 1.2rem;
+}
+
+body {
+  background-image: url(/prod/assets/img/backgroundMain.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: repeat;
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   body {
     width: 100%;
     height: 100vh;
@@ -491,22 +504,22 @@ body {
   background-color: #1e2327;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
 }
 #index .textIndex {
   margin-left: 7rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
   width: 50%;
 }
 #index .textIndex h1 {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 #index .textIndex h1 span {
   color: rgb(253, 70, 70);
 }
 
 /* section index mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #index {
     display: flex;
     flex-direction: column;
@@ -523,6 +536,7 @@ body {
     width: 90%;
   }
   #index .textIndex h1 {
+    line-height: 2rem;
     padding-bottom: 1rem;
   }
   #index .textIndex h1 span {
@@ -540,15 +554,15 @@ body {
   background-color: #1e2327;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
 }
 #carClean .textCarClean {
   margin-left: 7rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
   width: 50%;
 }
 #carClean .textCarClean h1 {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 #carClean .textCarClean p span {
   color: rgb(253, 70, 70);
@@ -573,6 +587,9 @@ body {
 #carClean .insideClean p {
   padding-top: 1rem;
 }
+#carClean .insideClean p span {
+  color: rgb(253, 70, 70);
+}
 #carClean .desinfection {
   margin-left: 7rem;
   margin-top: 5rem;
@@ -588,6 +605,9 @@ body {
 }
 #carClean .desinfection p {
   padding-top: 1rem;
+}
+#carClean .desinfection p span {
+  color: rgb(253, 70, 70);
 }
 #carClean .headlight {
   margin-left: 7rem;
@@ -605,9 +625,12 @@ body {
 #carClean .headlight p {
   padding-top: 1rem;
 }
+#carClean .headlight p span {
+  color: rgb(253, 70, 70);
+}
 
 /* section index mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #carClean {
     display: flex;
     flex-direction: column;
@@ -624,6 +647,7 @@ body {
   }
   #carClean .textCarClean h1 {
     padding-bottom: 1rem;
+    line-height: 2rem;
   }
   #carClean .textCarClean p span {
     color: rgb(253, 70, 70);
@@ -689,15 +713,15 @@ body {
   background-color: #1e2327;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
 }
 #carHifi .textCarHifi {
-  line-height: 1.5rem;
+  line-height: 2rem;
   width: 50%;
 }
 
 /* section carHifi mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #carHifi {
     display: flex;
     flex-direction: column;
@@ -724,11 +748,11 @@ body {
   background-color: #1e2327;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
 }
 #contact .textContact {
   margin-left: 7rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
   width: 50%;
 }
 #contact .textContact p span a {
@@ -751,7 +775,7 @@ body {
 }
 
 /* section index mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #contact {
     display: flex;
     flex-direction: column;
@@ -770,6 +794,7 @@ body {
     color: rgb(253, 70, 70);
   }
   #contact .textContact h1 {
+    line-height: 2rem;
     padding-bottom: 1rem;
   }
   #contact .textContact h1 span {
@@ -796,15 +821,15 @@ body {
   background-color: #1e2327;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
 }
 #folien .textFolien {
   margin-left: 7rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
   width: 50%;
 }
 #folien .textFolien h1 {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 #folien .textFolien p span {
   color: rgb(253, 70, 70);
@@ -814,7 +839,7 @@ body {
 }
 
 /* section folie mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #folien {
     display: flex;
     flex-direction: column;
@@ -831,6 +856,7 @@ body {
     width: 90%;
   }
   #folien .textFolien h1 {
+    line-height: 2rem;
     padding-bottom: 1rem;
   }
   #folien .textFolien p span {
@@ -851,19 +877,19 @@ body {
   background-color: #1e2327;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
 }
 #impressum .textImpressum {
   margin-left: 7rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
   width: 50%;
 }
 #impressum .textImpressum h1 {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 /* section impressum mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #impressum {
     display: flex;
     flex-direction: column;
@@ -880,6 +906,7 @@ body {
     width: 90%;
   }
   #impressum .textImpressum h1 {
+    line-height: 2rem;
     padding-bottom: 1rem;
   }
 }
@@ -894,15 +921,15 @@ body {
   background-color: #1e2327;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
 }
 #partners .textPartners {
   margin-left: 7rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
   width: 50%;
 }
 #partners .textPartners h1 {
-  margin: 0 0 1rem 0;
+  margin: 0 0 2rem 0;
 }
 #partners .textPartners .partnerContainer {
   width: 100%;
@@ -932,7 +959,7 @@ body {
 }
 
 /* section partners mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #partners {
     display: flex;
     flex-direction: column;
@@ -986,12 +1013,15 @@ body {
   background-color: #1e2327;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
 }
 #shop .textShop {
   margin-left: 7rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
   width: 50%;
+}
+#shop .textShop h1 {
+  margin-bottom: 2rem;
 }
 #shop .textShop .shopCards {
   display: flex;
@@ -1005,17 +1035,17 @@ body {
   display: flex;
   width: 100%;
 }
-#shop .textShop .shopCards .shopCardText {
+#shop .textShop .shopCards .shopCard .shopCardText {
   height: auto;
   margin-left: 2rem;
 }
-#shop .textShop .shopCards .imgContainer {
-  max-width: 40%;
-  height: auto;
+#shop .textShop .shopCards .shopCard .imgContainer {
+  min-width: 40%;
+  height: 90%;
   border-radius: 10px;
   overflow: hidden;
 }
-#shop .textShop .shopCards .imgContainer img {
+#shop .textShop .shopCards .shopCard .imgContainer img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -1026,7 +1056,7 @@ body {
 }
 
 /* section shop mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #shop {
     display: flex;
     flex-direction: column;
@@ -1039,7 +1069,7 @@ body {
   }
   #shop .textShop {
     margin-left: 0rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     width: 90%;
   }
   #shop .textShop .shopCards {
@@ -1054,16 +1084,16 @@ body {
     flex-wrap: wrap;
     width: 100%;
   }
-  #shop .textShop .shopCards .shopCardText {
+  #shop .textShop .shopCards .shopCard .shopCardText {
     margin: 1rem 0 0 0;
   }
-  #shop .textShop .shopCards .imgContainer {
+  #shop .textShop .shopCards .shopCard .imgContainer {
     min-width: 100%;
-    height: auto;
+    height: 40%;
     border-radius: 10px;
     overflow: hidden;
   }
-  #shop .textShop .shopCards .imgContainer img {
+  #shop .textShop .shopCards .shopCard .imgContainer img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -1084,17 +1114,15 @@ body {
   background-color: #1e2327;
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
 }
 #wheels .textWheels {
   margin-left: 7rem;
+  line-height: 2rem;
   width: 50%;
 }
 #wheels .textWheels h1 {
-  padding-bottom: 1rem;
-}
-#wheels .textWheels p {
-  line-height: 1.5rem;
+  padding-bottom: 2rem;
 }
 #wheels .textWheels p .highlieghtContent {
   color: rgb(253, 70, 70);
@@ -1129,7 +1157,7 @@ body {
 }
 
 /* section wheels mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #wheels {
     display: flex;
     flex-direction: column;
