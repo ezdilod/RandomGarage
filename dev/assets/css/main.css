@@ -715,20 +715,6 @@ body {
   width: 90%;
   margin: 0 auto 0 auto;
   padding: 2rem 0 5rem 0;
-}
-#galerie .galerieContainer {
-  margin-left: 7rem;
-  line-height: 2rem;
-  width: 50%;
-}
-#galerie .galerieContainer .headline {
-  width: 100%;
-  margin: 5rem 0 5rem 0;
-  display: flex;
-  justify-content: center;
-}
-#galerie .galerieContainer .wheelsGalerie {
-  box-sizing: border-box;
   /* Slideshow container */
   /* Hide the images by default */
   /* Next & previous buttons */
@@ -739,28 +725,22 @@ body {
   /* The dots/bullets/indicators */
   /* Fading animation */
 }
-#galerie .galerieContainer .wheelsGalerie .slideshow-container {
-  max-width: 100%;
+#galerie .galerieContainer {
+  overflow: hidden;
+  margin-left: 7rem;
+  line-height: 2rem;
+  width: 50%;
+}
+#galerie .slideshow-container {
+  max-width: 1000px;
   position: relative;
   margin: auto;
-  /* change size of slider */
-  /* change size of slider end */
 }
-#galerie .galerieContainer .wheelsGalerie .slideshow-container .mySlides {
-  max-height: 30rem;
-  overflow: hidden;
-  border-radius: 10px;
-}
-#galerie .galerieContainer .wheelsGalerie .slideshow-container .mySlides img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-#galerie .galerieContainer .wheelsGalerie .mySlides {
+#galerie .mySlides {
   display: none;
 }
-#galerie .galerieContainer .wheelsGalerie .prev,
-#galerie .galerieContainer .wheelsGalerie .next {
+#galerie .prev,
+#galerie .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -774,15 +754,15 @@ body {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-#galerie .galerieContainer .wheelsGalerie .next {
+#galerie .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-#galerie .galerieContainer .wheelsGalerie .prev:hover,
-#galerie .galerieContainer .wheelsGalerie .next:hover {
+#galerie .prev:hover,
+#galerie .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-#galerie .galerieContainer .wheelsGalerie .text {
+#galerie .text {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -791,14 +771,14 @@ body {
   width: 100%;
   text-align: center;
 }
-#galerie .galerieContainer .wheelsGalerie .numbertext {
+#galerie .numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
-#galerie .galerieContainer .wheelsGalerie .dot {
+#galerie .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -808,11 +788,11 @@ body {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-#galerie .galerieContainer .wheelsGalerie .active,
-#galerie .galerieContainer .wheelsGalerie .dot:hover {
+#galerie .active,
+#galerie .dot:hover {
   background-color: #717171;
 }
-#galerie .galerieContainer .wheelsGalerie .fade {
+#galerie .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -841,109 +821,6 @@ body {
     margin-left: 0rem;
     line-height: 1.5rem;
     width: 90%;
-  }
-  #galerie .galerieContainer .headline {
-    width: 100%;
-    margin: 1rem 0 5rem 0;
-    display: flex;
-    justify-content: center;
-  }
-  #galerie .galerieContainer .wheelsGalerie {
-    box-sizing: border-box;
-    /* Slideshow container */
-    /* Hide the images by default */
-    /* Next & previous buttons */
-    /* Position the "next button" to the right */
-    /* On hover, add a black background color with a little bit see-through */
-    /* Caption text */
-    /* Number text (1/3 etc) */
-    /* The dots/bullets/indicators */
-    /* Fading animation */
-  }
-  #galerie .galerieContainer .wheelsGalerie .slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-    /* change size of slider */
-    /* change size of slider end */
-  }
-  #galerie .galerieContainer .wheelsGalerie .slideshow-container .mySlides {
-    max-height: 30rem;
-    overflow: hidden;
-    border-radius: 0;
-  }
-  #galerie .galerieContainer .wheelsGalerie .slideshow-container .mySlides img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  #galerie .galerieContainer .wheelsGalerie .mySlides {
-    display: none;
-  }
-  #galerie .galerieContainer .wheelsGalerie .prev,
-#galerie .galerieContainer .wheelsGalerie .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  #galerie .galerieContainer .wheelsGalerie .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  #galerie .galerieContainer .wheelsGalerie .prev:hover,
-#galerie .galerieContainer .wheelsGalerie .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  #galerie .galerieContainer .wheelsGalerie .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  #galerie .galerieContainer .wheelsGalerie .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  #galerie .galerieContainer .wheelsGalerie .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  #galerie .galerieContainer .wheelsGalerie .active,
-#galerie .galerieContainer .wheelsGalerie .dot:hover {
-    background-color: #717171;
-  }
-  #galerie .galerieContainer .wheelsGalerie .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
   }
 }
 /* section carHifi mobile end */
