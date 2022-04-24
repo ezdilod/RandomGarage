@@ -7,10 +7,11 @@ menuBurger.onclick = function () {
 };
 
 /* Multiple Slider */
-let slideIndex = [1, 1];
-let slideId = ["mySlides1", "mySlides2"];
+let slideIndex = [1, 1, 2]; /* add third slider */
+let slideId = ["mySlides1", "mySlides2", "mySlides3"]; /* add third slider */
 showSlides(1, 0);
 showSlides(1, 1);
+showSlides(1, 2); /* add third slider */
 
 function plusSlides(n, no) {
   showSlides((slideIndex[no] += n), no);

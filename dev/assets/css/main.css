@@ -720,33 +720,36 @@ body {
   /* Next & previous buttons */
   /* Position the "next button" to the right */
   /* On hover, add a black background color with a little bit see-through */
-  /* Caption text */
-  /* Number text (1/3 etc) */
-  /* The dots/bullets/indicators */
-  /* Fading animation */
-  /*  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  } */
-  /*   @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-  } */
 }
 #galerie .galerieContainer {
   overflow: hidden;
   margin-left: 7rem;
-  line-height: 2rem;
   width: 50%;
+  padding: 4rem;
+}
+#galerie .galerieContainer h2 {
+  margin: 0rem 0 2rem 0;
 }
 #galerie .slideshow-container {
   max-width: 1000px;
+  max-height: 450px;
   position: relative;
-  margin: auto;
+  margin: 2rem auto auto auto;
+  overflow: hidden;
+}
+#galerie .slideshow-container .mySlides1,
+#galerie .slideshow-container .mySlides2,
+#galerie .slideshow-container .mySlides3 {
+  overflow: hidden;
+  width: 100%;
+  max-height: 450px;
+}
+#galerie .slideshow-container .mySlides1 img,
+#galerie .slideshow-container .mySlides2 img,
+#galerie .slideshow-container .mySlides3 img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
 }
 #galerie .mySlides {
   display: none;
@@ -774,34 +777,7 @@ body {
 #galerie .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-#galerie .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-#galerie .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-#galerie .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-#galerie .active,
-#galerie .dot:hover {
+#galerie .active:hover {
   background-color: #717171;
 }
 
