@@ -1,186 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--* link CSS -->
-    <!-- !change to prod -->
-    <link rel="stylesheet" href="/dev/assets/css/main.css" />
-    <!--* link end -->
-    <!--* link Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <!--* link end -->
-    <title>Mikes Garage</title>
-  </head>
-  <body>
-    <!--* header including Logo -->
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
- <!-- *social Logos and Contact -->
-      <div class="socialLogoContainer" id="socialLogoContainer">
-        <!-- link to contact -->
-        <div class="home">
-          <a href="/index.html">
-           <i class="fa-solid fa-house-chimney-user fa-2xl"></i>
-          </a>
-        </div>
-        <div class="contact">
-          <a href="/prod/html/contact.html">
-          <i class="fa-solid fa-message fa-2xl"></i>
-          </a>
-        </div>
-        <!-- link to facebook -->
-        <div class="facebook">
-          <a
-            href="https://de-de.facebook.com/mikesgarageweichs/"
-            target="blank"
-          >
-            <i class="fa-brands fa-facebook fa-2xl"></i></i>
-          </a>
-        </div>
-        <!-- link to instagram -->
-        <div class="instagram">
-          <a href="https://www.instagram.com/mikesgarage_weichs/"
-              target="blank">
-              <i class="fa-brands fa-instagram fa-2xl"></i>
-            </a>
-        </div>
-         <!-- toggle Menu disapiers if not Mobile screen -->
-       <div class="menuBurger" id="menuBurger">
-              <i class="fa-solid fa-bars fa-2xl"></i>
-        </div>
-      </div>
-     
-      <!-- *social Logos and Contact end -->
+  <!--* link CSS -->
+  <!-- !change to prod -->
+  <link rel="stylesheet" href="/prod/assets/css/main.css" />
+  <!--* link end -->
+  <!--* link Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet" />
+  <!--* link end -->
+  <title>Random Garage</title>
+</head>
 
-      <!-- * menu pops up on left -->
-      <menu>
-        <div class="menuContainer" id="menuContainer">
-          <div class="menuCard" id="menuCard">
-            <a href="/prod/html/wheels.html">
-              Felgen, Reifen, RDKS, Kompletträder</a
-            >
-          </div>
-          <div class="menuCard" id="menuCard">
-            <a href="/prod/html/carClean.html">Fahrzeug- & Lackaufbereitung</a>
-          </div>
-          <div class="menuCard" id="menuCard">
-            <a href="/prod/html/folien.html">Folierung</a>
-          </div>
-          <div class="menuCard" id="menuCard">
-            <a href="/prod/html/galerie.html">Galerie</a>
-          </div>
-          <div class="menuCard" id="menuCard">
-            <a href="/prod/html/shop.html">Shop</a>
-          </div>
-          <div class="menuCard" id="menuCard">
-            <a href="/prod/html/partners.html">Unsere Partner</a>
-          </div>
-        </div>
-      </menu>
-      <!-- * menu end -->
-      <!-- *logo -->
-      <div class="logoContainer" id="logoContainer">
-        <img class="background" src="/prod/assets/img/backgroundMain.jpg" alt="">
-        <img class="logo" src="/prod/assets/img/logo.png" alt="">
-      </div>
-      <!-- *logo end -->
+<body>
+  <!--* header including Logo -->
+  <header>
 
-    </header>
-    <!--* header end -->
-    <section class="galerie" id="galerie">
-      <div class="galerieContainer" id="galerieContainer">
-
-              <h2 style="text-align:center">Galerie</h2>
-              <p>Reifen und Felgen</p>
-              <div class="slideshow-container">
-                <div class="mySlides1">
-                  <img src="/prod/assets/img/galerieImg/1.jpg" >
-                </div>
-
-                <div class="mySlides1">
-                  <img src="/prod/assets/img/galerieImg/2.jpg" >
-                </div>
-
-                <div class="mySlides1">
-                  <img src="/prod/assets/img/galerieImg/3.jpg" >
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-              </div>
-
-               <p>Fahrzeugaufbereitung</p>
-              <div class="slideshow-container">
-                <div class="mySlides2">
-                  <img src="/prod/assets/img/galerieImg/4.jpg">
-                </div>
-
-                <div class="mySlides2">
-                  <img src="/prod/assets/img/galerieImg/5.jpg">
-                </div>
-
-                <div class="mySlides2">
-                  <img src="/prod/assets/img/galerieImg/6.jpg">
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-              </div>
-
-              <p>Folierung</p>
-              <div class="slideshow-container">
-                <div class="mySlides3">
-                  <img src="/prod/assets/img/galerieImg/7.jpg">
-                </div>
-
-                <div class="mySlides3">
-                  <img src="/prod/assets/img/galerieImg/8.jpg">
-                </div>
-
-                <div class="mySlides3">
-                  <img src="/prod/assets/img/galerieImg/9.jpg">
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-              </div>
-
-
-      </div>
-
-      
-      </section>
-    <footer>
-      <div class="footerImpressum" id="footerImpressum">
-        <a href="/prod/html/impressum.html">
-          <h5>Impressum</h5>
+    <!-- *social Logos and Contact -->
+    <div class="socialLogoContainer" id="socialLogoContainer">
+      <!-- link to contact -->
+      <div class="home">
+        <a href="/index.html">
+          <i class="fa-solid fa-house-chimney-user fa-2xl"></i>
         </a>
       </div>
-      <div class="copyrightMike">
-        &copy;
-        <h6>Mikes Garage</h6>
+      <div class="contact">
+        <a href="/prod/html/contact.html">
+          <i class="fa-solid fa-message fa-2xl"></i>
+        </a>
       </div>
-      <div class="copyrightEzyCode">
-        &copy;
-        <h6>ezyCode</h6>
+      <!-- link to facebook -->
+      <div class="facebook">
+        <a href='#' target="blank">
+          <i class="fa-brands fa-facebook fa-2xl"></i></i>
+        </a>
       </div>
-    </footer>
-    <!-- *fontawesome link -->
-    <script
-      src="https://kit.fontawesome.com/279a37dd8b.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- *fontawesome link end -->
-    <!-- * main.js link -->
-    <script src="/prod/js/main.js"></script>
-    <!-- * main.js link end -->
-  </body>
+      <!-- link to instagram -->
+      <div class="instagram">
+        <a href="#" target="blank">
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+        </a>
+      </div>
+      <!-- toggle Menu disapiers if not Mobile screen -->
+      <div class="menuBurger" id="menuBurger">
+        <i class="fa-solid fa-bars fa-2xl"></i>
+      </div>
+    </div>
+
+    <!-- *social Logos and Contact end -->
+
+    <!-- * menu pops up on left -->
+    <menu>
+      <div class="menuContainer" id="menuContainer">
+        <div class="menuCard" id="menuCard">
+          <a href="/prod/html/wheels.html">
+            Felgen, Reifen, RDKS, Kompletträder</a>
+        </div>
+        <div class="menuCard" id="menuCard">
+          <a href="/prod/html/carClean.html">Fahrzeug- & Lackaufbereitung</a>
+        </div>
+        <div class="menuCard" id="menuCard">
+          <a href="/prod/html/folien.html">Folierung</a>
+        </div>
+        <div class="menuCard" id="menuCard">
+          <a href="/prod/html/galerie.html">Galerie</a>
+        </div>
+        <div class="menuCard" id="menuCard">
+          <a href="/prod/html/shop.html">Shop</a>
+        </div>
+        <div class="menuCard" id="menuCard">
+          <a href="/prod/html/partners.html">Unsere Partner</a>
+        </div>
+      </div>
+    </menu>
+    <!-- * menu end -->
+    <!-- *logo -->
+    <div class="logoContainer" id="logoContainer">
+      <img class="background" src="/prod/assets/img/backgroundMain.jpg" alt="">
+      <img class="logo" src="/prod/assets/img/logo.png" alt="">
+    </div>
+    <!-- *logo end -->
+
+  </header>
+  <!--* header end -->
+  <section class="galerie" id="galerie">
+    <div class="galerieContainer" id="galerieContainer">
+
+      <h2 style="text-align:center">Galerie</h2>
+      <p>Reifen und Felgen</p>
+      <div class="slideshow-container">
+        <div class="mySlides1">
+          <img src="/prod/assets/img/galerieImg/1.jpg">
+        </div>
+
+        <div class="mySlides1">
+          <img src="/prod/assets/img/galerieImg/2.jpg">
+        </div>
+
+        <div class="mySlides1">
+          <img src="/prod/assets/img/galerieImg/3.jpg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+
+      <p>Fahrzeugaufbereitung</p>
+      <div class="slideshow-container">
+        <div class="mySlides2">
+          <img src="/prod/assets/img/galerieImg/4.jpg">
+        </div>
+
+        <div class="mySlides2">
+          <img src="/prod/assets/img/galerieImg/5.jpg">
+        </div>
+
+        <div class="mySlides2">
+          <img src="/prod/assets/img/galerieImg/6.jpg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+
+      <p>Folierung</p>
+      <div class="slideshow-container">
+        <div class="mySlides3">
+          <img src="/prod/assets/img/galerieImg/7.jpg">
+        </div>
+
+        <div class="mySlides3">
+          <img src="/prod/assets/img/galerieImg/8.jpg">
+        </div>
+
+        <div class="mySlides3">
+          <img src="/prod/assets/img/galerieImg/9.jpg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footerImpressum" id="footerImpressum">
+      <h5>Impressum</h5>
+      </a>
+    </div>
+    <div class="copyrightEzyCode">
+      &copy;
+      <h6>ezyCode</h6>
+    </div>
+  </footer>
+  <!-- *fontawesome link -->
+  <script src="https://kit.fontawesome.com/279a37dd8b.js" crossorigin="anonymous"></script>
+  <!-- *fontawesome link end -->
+  <!-- * main.js link -->
+  <script src="/prod/js/main.js"></script>
+  <!-- * main.js link end -->
+</body>
+
 </html>

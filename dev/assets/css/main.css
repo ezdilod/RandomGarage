@@ -76,9 +76,9 @@ header .logoContainer .background {
 }
 header .logoContainer .logo {
   position: absolute;
-  right: 0%;
-  top: 0%;
-  width: 25%;
+  left: 6.5%;
+  top: 2%;
+  width: 4%;
   height: auto;
   transition: 0.2s;
   object-fit: cover;
@@ -929,52 +929,6 @@ body {
   }
 }
 /* section folie end */
-/* section folien end */
-/*ANCHOR section impressum */
-#impressum {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #1e2327;
-  width: 90%;
-  margin: 0 auto 0 auto;
-  padding: 2rem 0 5rem 0;
-}
-#impressum .textImpressum {
-  margin-left: 7rem;
-  line-height: 2rem;
-  width: 50%;
-}
-#impressum .textImpressum h1 {
-  padding-bottom: 2rem;
-}
-
-/* section impressum mobile */
-@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  #impressum {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #1e2327;
-    width: 100%;
-    margin: 0 auto 0 auto;
-    padding: 5rem 0 5rem 0;
-    /* fix the overflow of impressum */
-    overflow: hidden;
-  }
-  #impressum .textImpressum {
-    margin-left: 0rem;
-    line-height: 1.5rem;
-    width: 90%;
-  }
-  #impressum .textImpressum h1 {
-    line-height: 2rem;
-    padding-bottom: 1rem;
-  }
-}
-/* section impressum end */
 /* section index mobile end */
 /*ANCHOR section partners */
 #partners {
@@ -1013,7 +967,7 @@ body {
 }
 #partners .textPartners .partnerContainer .partnerImgContainer .outerContainer .imgContainer {
   margin: 1rem;
-  min-width: 14rem;
+  width: 12rem;
   height: auto;
   object-fit: cover;
 }
@@ -1116,6 +1070,13 @@ body {
 }
 #shop .textShop .shopCards span,
 #shop .textShop .shopCards a {
+  color: rgb(253, 70, 70);
+}
+#shop h1 {
+  line-height: 2rem;
+  padding-bottom: 1rem;
+}
+#shop h1 span {
   color: rgb(253, 70, 70);
 }
 

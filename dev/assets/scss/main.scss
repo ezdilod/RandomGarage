@@ -268,6 +268,8 @@ body {
       margin: 0rem 0 2rem 0;
     }
   }
+
+  //!fix it for Safari
   /* Slideshow container */
   .slideshow-container {
     max-width: 1000px;
@@ -489,52 +491,7 @@ body {
   }
 }
 /* section folie end */
-/* section folien end */
 
-/*ANCHOR section impressum */
-#impressum {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: $backgroundColor;
-  width: 90%;
-  margin: 0 auto 0 auto;
-  padding: 2rem 0 5rem 0;
-  .textImpressum {
-    margin-left: 7rem;
-    line-height: $linehight3;
-    width: 50%;
-    h1 {
-      padding-bottom: 2rem;
-    }
-  }
-}
-/* section impressum mobile */
-@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  #impressum {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $backgroundColor;
-    width: 100%;
-    margin: 0 auto 0 auto;
-    padding: 5rem 0 5rem 0;
-    /* fix the overflow of impressum */
-    overflow: hidden;
-    .textImpressum {
-      margin-left: 0rem;
-      line-height: 1.5rem;
-      width: 90%;
-      h1 {
-        line-height: $linehight3;
-        padding-bottom: 1rem;
-      }
-    }
-  }
-}
-/* section impressum end */
 /* section index mobile end */
 
 /*ANCHOR section partners */
@@ -569,7 +526,8 @@ body {
           margin: 0 auto 0 auto;
           .imgContainer {
             margin: 1rem;
-            min-width: 14rem;
+
+            width: 12rem;
             height: auto;
             object-fit: cover;
             img {
@@ -677,6 +635,13 @@ body {
       a {
         color: $accentColor;
       }
+    }
+  }
+  h1 {
+    line-height: $linehight3;
+    padding-bottom: 1rem;
+    span {
+      color: $accentColor;
     }
   }
 }
