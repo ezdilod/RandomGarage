@@ -59,10 +59,11 @@ header {
       }
       .logo {
         position: absolute;
-        right: 0%;
-        top: 0%;
-        width: 25%;
+        right: 10px !important;
+        top: 10px;
+        width: 14%;
         height: auto;
+        transition: $transition1;
         object-fit: cover;
       }
     }
